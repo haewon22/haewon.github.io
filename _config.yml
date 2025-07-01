@@ -7,6 +7,8 @@ title: "Jeong Haewon — CV"      # 브라우저 탭 제목
 lang: "ko"                      # html lang 속성
 version: 2                      # ← 꼭 v2
 
+intro: false
+
 # 소셜/연락처 (없으면 지워도 됨)
 name: "Jeong Haewon"
 email: "<haewon@cau.ac.kr>"
