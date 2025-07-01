@@ -1,5 +1,26 @@
-remote_theme: sproogen/modern-resume-theme       
+remote_theme: sproogen/modern-resume-theme
 plugins:
-  - jekyll-remote-theme                          
-title: "Jeong Haewon – CV"
-lang: "en"
+  - jekyll-remote-theme
+
+title: "Jeong Haewon — CV"
+lang: "ko"
+version: 2            # ★ 추가 ― V2 템플릿 사용
+
+content:              # ↓ V2 방식으로 About / Projects 작성
+  - title: About Me
+    layout: text
+    content: |
+      중앙대학교 **AI학과 4학년**.<br>
+      Vision-Language 모델 연구와 **UnmixCLIP** 프로젝트 진행 중입니다.
+
+  - title: Projects
+    layout: list
+    content:
+      - layout: left
+        title: UnmixCLIP
+        link: https://github.com/haewon22/UnmixClip_
+        sub_title: Vision-Language, Zero-Shot
+        caption: 2024.03 – 2025.06
+        description: |
+          CLIP 클래스 간 **disentanglement**로 mAP +12.<br>
+          학부 연구생 1저자 논문 제출 준비 중.
