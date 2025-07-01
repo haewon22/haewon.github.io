@@ -20,11 +20,11 @@ darkmode: false                # true / false / never
 
 # ---------- 본문 섹션 ----------
 content:
-  - title: About Me
-    layout: text
-    content: |
-      중앙대학교 **AI학과 4학년**.<br>
-      Vision-Language 모델 연구와 **UnmixCLIP** 프로젝트를 진행 중입니다.
+  # - title: About Me
+  #   layout: text
+  #   content: |
+  #     중앙대학교 **AI학과 4학년**.<br>
+  #     Vision-Language 모델 연구와 **UnmixCLIP** 프로젝트를 진행 중입니다.
 
   - title: Research Projects
     layout: list
