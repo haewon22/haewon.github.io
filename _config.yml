@@ -1,0 +1,5 @@
+remote_theme: sproogen/modern-resume-theme       
+plugins:
+  - jekyll-remote-theme                          
+title: "Jeong Haewon – CV"
+lang: "en"
