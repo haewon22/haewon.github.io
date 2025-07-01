@@ -1,55 +1,42 @@
-############################################################
-# 기본 테마·플러그인 지정
-############################################################
 remote_theme: sproogen/modern-resume-theme
 plugins:
-  - jekyll-remote-theme
+  - jekyll-remote-theme        # GitHub Pages에서 테마 불러오기
 
-############################################################
-# 사이트 메타데이터
-############################################################
-title: "Jeong Haewon — CV"
-lang: "ko"
-version: 2          # ★ v2 템플릿 사용
+# ---------- 필수 기본 설정 ----------
+title: "Jeong Haewon — CV"      # 브라우저 탭 제목
+lang: "ko"                      # html lang 속성
+version: 2                      # ← 꼭 v2
 
-############################################################
-# v1 기본 섹션(About / Projects / …) 끄기 ── 중복 방지
-############################################################
-about_title:      ""   # 빈 문자열이면 렌더링 안 함
-about_content:    ""
-projects_title:   ""
-projects_content: ""
-experience_title: ""
-experience_content: ""
-education_title:  ""
-education_content: ""
+# 소셜/연락처 (없으면 지워도 됨)
+name: "Jeong Haewon"
+email: "<haewon@cau.ac.kr>"
+github_username: "haewon22"
+linkedin_username: "<your-linkedin-id>"   # 없으면 삭제
 
-############################################################
-# 본문 섹션 (v2 방식)
-############################################################
+# 다크 모드 (취향)
+darkmode: false                # true / false / never
+
+# ---------- 본문 섹션 ----------
 content:
-  ################################################################
   - title: About Me
     layout: text
     content: |
       중앙대학교 **AI학과 4학년**.<br>
       Vision-Language 모델 연구와 **UnmixCLIP** 프로젝트를 진행 중입니다.
 
-  ################################################################
   - title: Research Projects
     layout: list
     content:
       - layout: left
         title: D-CLIP (Class-wise Disentanglement for Fine-grained Tasks)
         sub_title: 3-인 팀 프로젝트 · 구현 담당
-        caption: 2025&nbsp;Mar – Jun
+        caption: 2025 Mar – Jun
         link: https://github.com/haewon22/DCLIP
         description: |
           • **CLIP** 피처를 클래스별로 disentangle 하여 fine-grained recognition 성능 향상  
           • ResNet-101 백본 + Prompt Ensembling → **top-1 ↑ 9.3 pp / mAP ↑ 12**  
           • Zero-/Few-shot 벤치마크(**CUB-200, CAR-196**)에서 SOTA 달성
 
-  ################################################################
   - title: Paper Notes
     layout: list
     content:
@@ -58,9 +45,8 @@ content:
         link: https://blossom-surgeon-a74.notion.site/1be080fca98e8064922af818d55c3f55
         sub_title: 30 편 이상 요약
         description: |
-          최신 CLIP 변형, Prompt Engineering, Disentanglement 기법 등을 그림·표 중심으로 정리
+          최신 CLIP 변형, Prompt Engineering, Disentanglement 기법 등을 그림/표 중심으로 정리
 
-  ################################################################
   - title: Transcripts
     layout: text
     content: |
