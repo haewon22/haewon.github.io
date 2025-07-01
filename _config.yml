@@ -1,57 +1,199 @@
-remote_theme: sproogen/modern-resume-theme
-plugins:
-  - jekyll-remote-theme        # GitHub Pages에서 테마 불러오기
+# remote_theme: sproogen/modern-resume-theme
+# plugins:
+#   - jekyll-remote-theme        # GitHub Pages에서 테마 불러오기
 
-# ---------- 필수 기본 설정 ----------
-title: "Jeong Haewon — CV"      # 브라우저 탭 제목
-lang: "ko"                      # html lang 속성
-version: 2                      # ← 꼭 v2
+# # ---------- 필수 기본 설정 ----------
+# title: "Jeong Haewon — CV"      # 브라우저 탭 제목
+# lang: "ko"                      # html lang 속성
+# version: 2                      # ← 꼭 v2
 
-intro: false
+# intro: false
 
-# 소셜/연락처 (없으면 지워도 됨)
-name: "Jeong Haewon"
-email: "<haewon@cau.ac.kr>"
-github_username: "haewon22"
-linkedin_username: "<your-linkedin-id>"   # 없으면 삭제
+# # 소셜/연락처 (없으면 지워도 됨)
+# name: "Jeong Haewon"
+# email: "<haewon@cau.ac.kr>"
+# github_username: "haewon22"
+# linkedin_username: "<your-linkedin-id>"   # 없으면 삭제
 
-# 다크 모드 (취향)
-darkmode: false                # true / false / never
+# # 다크 모드 (취향)
+# darkmode: false                # true / false / never
 
-# ---------- 본문 섹션 ----------
+# # ---------- 본문 섹션 ----------
+# content:
+#   # - title: About Me
+#   #   layout: text
+#   #   content: |
+#   #     중앙대학교 **AI학과 4학년**.<br>
+#   #     Vision-Language 모델 연구와 **UnmixCLIP** 프로젝트를 진행 중입니다.
+
+#   - title: Research Projects
+#     layout: list
+#     content:
+#       - layout: left
+#         title: D-CLIP (Class-wise Disentanglement for Fine-grained Tasks)
+#         sub_title: 3-인 팀 프로젝트 · 구현 담당
+#         caption: 2025 Mar – Jun
+#         link: https://github.com/haewon22/DCLIP
+#         description: |
+#           • **CLIP** 피처를 클래스별로 disentangle 하여 fine-grained recognition 성능 향상  
+#           • ResNet-101 백본 + Prompt Ensembling → **top-1 ↑ 9.3 pp / mAP ↑ 12**  
+#           • Zero-/Few-shot 벤치마크(**CUB-200, CAR-196**)에서 SOTA 달성
+
+#   - title: Paper Notes
+#     layout: list
+#     content:
+#       - layout: left
+#         title: Vision-Language 논문 정리 노션
+#         link: https://blossom-surgeon-a74.notion.site/1be080fca98e8064922af818d55c3f55
+#         sub_title: 30 편 이상 요약
+#         description: |
+#           최신 CLIP 변형, Prompt Engineering, Disentanglement 기법 등을 그림/표 중심으로 정리
+
+#   - title: Transcripts
+#     layout: text
+#     content: |
+#       • 학부 누적 GPA : **4.2 / 4.5**  
+#       • 전공 평점    : **4.3**  
+#       • [성적 증명서 PDF 다운로드](/assets/Transcript_Haewon.pdf)
+
+
+# Site
+repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
+# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Your Name
+title: Your job title
+email: Your email (optional)
+# email_title: Email (Email title override)
+phone: Your phone number (optional)
+# phone_title: Phone (Phone title override)
+website: Your website (eg. https://google.com)(optional)
+# website_title: Web (Website title override)
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+twitter_username: jekyllrb
+github_username:  jekyll
+stackoverflow_username: "00000001"
+dribbble_username: jekyll
+facebook_username: jekyll
+flickr_username: jekyll
+instagram_username: jekyll
+linkedin_username: jekyll
+xing_username: jekyll
+pinterest_username: jekyll
+youtube_username: jekyll
+orcid_username: 0000-0000-0000-0000
+googlescholar_username: D847cGsAAAAJ
+
+# Additional icon links
+additional_links:
+- title: Link name
+  icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+  url: Link url (eg. https://google.com)
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me (Use this to override about section title)
+about_profile_image: Directory of profile image (eg. images/profile.jpg)
+about_content: | # this will include new lines to allow paragraphs
+  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
+
+  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
+    - Lists
+    - Tables
+    - <a href="google.com">Links</a>
+    - Images ![alt text](/images/landscape-trees.jpg "Trees")
+
 content:
-  # - title: About Me
-  #   layout: text
-  #   content: |
-  #     중앙대학교 **AI학과 4학년**.<br>
-  #     Vision-Language 모델 연구와 **UnmixCLIP** 프로젝트를 진행 중입니다.
-
-  - title: Research Projects
-    layout: list
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: D-CLIP (Class-wise Disentanglement for Fine-grained Tasks)
-        sub_title: 3-인 팀 프로젝트 · 구현 담당
-        caption: 2025 Mar – Jun
-        link: https://github.com/haewon22/DCLIP
-        description: |
-          • **CLIP** 피처를 클래스별로 disentangle 하여 fine-grained recognition 성능 향상  
-          • ResNet-101 백본 + Prompt Ensembling → **top-1 ↑ 9.3 pp / mAP ↑ 12**  
-          • Zero-/Few-shot 벤치마크(**CUB-200, CAR-196**)에서 SOTA 달성
-
-  - title: Paper Notes
+        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+                      # other value (or no value) means no border will be displayed
+        title: Project name
+        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+        link_text: Link Text
+        additional_links:
+          - title:  Github page for project (eg. sproogen/modern-resume-theme)
+            icon: fab fa-github
+            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+          - title:  Github page for project (eg. sproogen/modern-resume-theme)
+            icon: fab fa-github
+            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+        quote: >
+          Short overview of the project (optional)
+        description: | # this will include new lines to allow paragraphs
+          Description about the work on/with the project
+  - title: Experience
     layout: list
     content:
-      - layout: left
-        title: Vision-Language 논문 정리 노션
-        link: https://blossom-surgeon-a74.notion.site/1be080fca98e8064922af818d55c3f55
-        sub_title: 30 편 이상 요약
-        description: |
-          최신 CLIP 변형, Prompt Engineering, Disentanglement 기법 등을 그림/표 중심으로 정리
-
-  - title: Transcripts
+      - layout: right
+        title: Company name
+        sub_title: Job title
+        caption: Date Range (eg. November 2016 - present)
+        link: Link to company (optional)
+        quote: >
+          Short description of the company (optional)
+        description: | # this will include new lines to allow paragraphs
+          Description of role
+  - title: Education
+    layout: list
+    content:
+      - layout: top-right
+        title: Institution name
+        sub_title: Qualifications (eg. BA Performing Arts)
+        caption: Date Range (eg. 2016 - 2019)
+        quote: >
+          Short institution or course description (optional)
+        description: | # this will include new lines to allow paragraphs
+          Description of qualification
+  - title: A Little More About Me
     layout: text
-    content: |
-      • 학부 누적 GPA : **4.2 / 4.5**  
-      • 전공 평점    : **4.3**  
-      • [성적 증명서 PDF 다운로드](/assets/Transcript_Haewon.pdf)
+    content: | # this will include new lines to allow paragraphs
+      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
+
+      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
+
+exclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  "scripts/",
+  "docker-compose.yml",
+  ]
