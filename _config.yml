@@ -75,15 +75,15 @@ content:
   #       description: | # this will include new lines to allow paragraphs
   #         I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
 
-  - title: Experience # Title for the section
+  - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: The Boring Company
-        link: boringcompany.com
+        title: UnmixCLIP implementation
+        link: https://github.com/haewon22/UnmixClip_.git
         # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
+        sub_title: Disentangling Classes in CLIP for Fine-Grained Tasks
+        caption: 2025.03.17-2025.06.23
         quote: >
           Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
         description: | # this will include new lines to allow paragraphs
