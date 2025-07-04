@@ -48,9 +48,11 @@ darkmode: false
 # about_title: About Me
 about_profile_image: images/정해원.JPEG
 about_content: | # this will include new lines to allow paragraphs
-  중앙대학교 AI학과에 재학 중인 정해원입니다. 특히 컴퓨터 비전(Computer Vision)과 비전-언어 모델(Vision-Language Models)에 깊은 관심을 가지고 있으며, 관련 연구실에서 인턴십을 통해 실제 연구에 참여하고 싶습니다.
-  My name is haewon Jeong, an undergraduate student majoring in Artificial intelligence at Chung-Ang University.    
-  I'm especialy interested in Computer Vision and Vision-Language Models.
+  중앙대학교 AI학과에 재학 중인 정해원입니다. 특히 컴퓨터 비전(Computer Vision)과 비전-언어 모델(Vision-Language Models)에 깊은 관심을 가지고 있으며, 관련 연구실에서 인턴십을 통해 실제 연구에 참여하고 싶습니다.   
+  
+  
+  
+  My name is haewon Jeong, an undergraduate student majoring in Artificial intelligence at Chung-Ang University. I'm especialy interested in Computer Vision and Vision-Language Models.
 
 
 content:
