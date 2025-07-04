@@ -84,8 +84,8 @@ content:
         # link_text: boringcompany.com
         sub_title: CLIP 모델의 Fine-Grained Task를 위한 클래스 분리(Disentangling Classes in CLIP for Fine-Grained Tasks)
         caption: 2025.03.17-2025.06.23
-        quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        # quote: >
+        #   Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
         description: | # this will include new lines to allow paragraphs
             본 프로젝트에서는 Fine-Grained Task에서 CLIP 모델의 성능 향상을 목표로, 클래스 간의 혼란을 줄이기 위한 UnmixCLIP 논문을 재구현하였습니다. PyTorch를 활용하여 모델을 구현하고, PASCAL VOC 데이터셋에 적용하여 성능을 검증했습니다. 이 프로젝트를 통해 딥러닝 모델 구현 능력과 논문 분석 능력을 향상시킬 수 있었습니다.
 
@@ -97,8 +97,8 @@ content:
         caption: 2022 - 2026
         link: https://www.cau.ac.kr/
         sub_title: AI학과 (Department of Artificial Intelligence)
-        quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        # quote: >
+        #   Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
         description: | # this will include new lines to allow paragraphs
           중앙대학교 AI학과에서 딥러닝, 컴퓨터 비전, 자연어 처리, 음성처리 등 인공지능 분야의 핵심 과목들을 수강하며 탄탄한 기초 지식을 쌓았습니다.
 
@@ -111,9 +111,7 @@ content:
       - (본인의 취미나 관심사)
       - (본인의 취미나 관심사)
       - [How to be Ninja 2.0](https://www.youtube.com/watch?v=yYy7gD2cK4o)
-          Look at this cool image  
-          ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
-
+    
 # Footer
 footer_show_references: true
 # references_title: References on request (Override references text)
